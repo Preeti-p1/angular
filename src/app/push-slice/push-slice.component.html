@@ -1,0 +1,25 @@
+<p>Push-Slice Method</p>
+
+<div>
+    <input type="text" #uname>
+    <button (click)="createUser(uname)">save</button>
+    <button (click)="deleteUser()">delete</button>
+</div>
+<table>
+    <thead>
+        <tr>
+            <td>User</td>
+        </tr>
+       
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; index as i">
+            <td>
+               {{user.name}}
+            </td>
+            <td>
+                <button (click)="deleteItem(i)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
