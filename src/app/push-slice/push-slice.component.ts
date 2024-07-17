@@ -10,7 +10,9 @@ users:any=[];
 
 createUser(uname:any){
 this.users.push({name:uname.value})
-
+if(this.users.length>3){
+  alert("more then three please stop ")
+}
 }
 deleteUser(){
   this.users.splice(this.users.length-1)
