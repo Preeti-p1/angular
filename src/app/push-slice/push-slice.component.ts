@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-push-slice',
@@ -6,12 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './push-slice.component.css'
 })
 export class PushSliceComponent {
+  constructor(private router:Router){}
 users:any=[];
 
 createUser(uname:any){
 this.users.push({name:uname.value})
 if(this.users.length>3){
-  alert("more then three please stop ")
+ this.router.navigate(['product'])
 }
 }
 deleteUser(){
