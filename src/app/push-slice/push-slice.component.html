@@ -1,10 +1,17 @@
-<p>Push-Slice Method</p>
 
-<div>
-    <input type="text" #uname>
-    <button (click)="createUser(uname)">save</button>
-    <button (click)="deleteUser()">delete</button>
+  
+<div class="incontainer">
+<mat-form-field class="example-full-width">
+    <mat-label>User name</mat-label>
+    <input matInput #uname>
+  </mat-form-field>
+    <div class="example-button-row">
+        <button mat-button (click)="createUser(uname)">Save</button>
+        <button mat-button (click)="deleteUser()">Delete</button>
+    </div>
 </div>
+ 
+
 <table>
     <thead>
         <tr>
