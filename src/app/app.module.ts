@@ -20,6 +20,8 @@ import { LaptopComponent } from './product/laptop/laptop.component';
 import { MobileComponent } from './product/mobile/mobile.component';
 import { TvComponent } from './product/tv/tv.component';
 import { HeadphoneComponent } from './product/headphone/headphone.component';
+import { CardComponent } from './card/card.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { HeadphoneComponent } from './product/headphone/headphone.component';
     LaptopComponent,
     MobileComponent,
     TvComponent,
-    HeadphoneComponent
+    HeadphoneComponent,
+    CardComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

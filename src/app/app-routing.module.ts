@@ -9,11 +9,13 @@ import { LaptopComponent } from './product/laptop/laptop.component';
 import { HeadphoneComponent } from './product/headphone/headphone.component';
 import { TvComponent } from './product/tv/tv.component';
 import { MobileComponent } from './product/mobile/mobile.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {path:"home" , component:HomeComponent},
 {path:"binding" , component:BindingComponent},
+{path:"contact" , component:ContactComponent},
 {path:"directive" , component:DirectiveComponent}, 
 {path:"product" ,component:ProductComponent,children:[
   {path:"laptop",component:LaptopComponent},
