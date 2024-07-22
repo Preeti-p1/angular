@@ -1,0 +1,106 @@
+
+<div class="container-center"><h1>Product</h1>
+</div>
+<hr>
+
+
+
+<mat-toolbar  class="tool" *ngIf="addProduct">
+    <button  mat-button style="color: white;  font-size: 20px;"  ><strong>{{addProduct}}</strong> is Selected And To Card</button>
+    <!-- <span>Laptop is Selected And To Card</span> -->
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" style="color: white;" aria-label="Example icon-button with heart icon">
+   Check out
+    </button>
+   
+  </mat-toolbar>
+
+
+<div class="container">
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+         
+          <mat-card-title>Laptop</mat-card-title>
+          
+        </mat-card-header>
+        <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwXaQfeb3pz-uYDN3YFqxoiFCo7egQ2wLWMA&s" alt="Photo of a Shiba Inu">
+         <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button  (click)="selectedPoduct('Laptop')">Select This Product</button>    
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+        
+          <mat-card-title>Mobile</mat-card-title>
+         
+        </mat-card-header>
+        <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMdyao5CzD8sKVSn7J3O99JfS3B8uAV0SxKw&s" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="selectedPoduct('Mobile')">Select This Product</button>    
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+         
+          <mat-card-title>TV</mat-card-title>
+          
+        </mat-card-header>
+        <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKJie0juKWcdhusAQnbewXgPP7ia4c3GcIg&s" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="selectedPoduct('TV')">Select This Product</button>    
+        </mat-card-actions>
+      </mat-card>
+
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+         
+          <mat-card-title>Head Phone</mat-card-title>
+         
+        </mat-card-header>
+        <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7DMu-7O2189abNd7fPJCirKtnE_NiO93s_g&s" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="selectedPoduct('Head Phone')">Select This Product</button>    
+        </mat-card-actions>
+      </mat-card>
+    
+      <div>
+        <router-outlet></router-outlet>
+      
+      </div>
+</div>
+<br>
+<hr>
+
+
+<app-child (addProduct)="onAddedProduct($event)" [productSelected]="productSelect" [selectItem]="selectedItem"></app-child>
+

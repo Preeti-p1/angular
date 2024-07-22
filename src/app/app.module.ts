@@ -22,6 +22,8 @@ import { TvComponent } from './product/tv/tv.component';
 import { HeadphoneComponent } from './product/headphone/headphone.component';
 import { CardComponent } from './card/card.component';
 import { ContactComponent } from './contact/contact.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { ContactComponent } from './contact/contact.component';
     TvComponent,
     HeadphoneComponent,
     CardComponent,
-    ContactComponent
+    ContactComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

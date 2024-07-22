@@ -1,5 +1,6 @@
-/* app.component.css */
-.spacer {
-    flex: 1 1 auto;
-  }
-  
+.container-center {
+  text-align: center;
+}
+.Product{
+  text-align: center;
+}

@@ -1,7 +1,23 @@
-<!-- app.component.html -->
-<!-- <mat-toolbar color="primary">
-    <span>My App</span>
-    <span class="spacer"></span>
-    <button mat-button>Click Me</button>
-  </mat-toolbar> -->
-  
+<div class="container-center">
+  <h1>Home</h1>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur,
+    veniam ipsum illum quisquam dolorum accusantium ea facilis veritatis ratione
+    aut eligendi pariatur aliquam quidem ipsa illo provident fuga. Doloribus,
+    atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Consequuntur, veniam ipsum illum quisquam dolorum accusantium ea facilis
+    veritatis ratione aut eligendi pariatur aliquam quidem ipsa illo provident
+    fuga. Doloribus, atque. Lorem ipsum, dolor sit amet consectetur adipisicing
+    elit. Consequuntur, veniam ipsum illum quisquam dolorum accusantium ea
+    facilis veritatis ratione aut eligendi pariatur aliquam quidem ipsa illo
+    provident fuga. Doloribus, atque.
+  </p>
+</div>
+<hr />
+ <div class="Product">
+  <ng-container *ngIf="statusOnline">
+    <div *ngFor="let items of products">
+      {{items.name}}
+        </div>
+  </ng-container>
+ </div>

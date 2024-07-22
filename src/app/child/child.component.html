@@ -1,0 +1,5 @@
+<footer class="container-center">
+    <h2 *ngIf="!productSelected">Select Any Product</h2>
+    <h2 *ngIf="productSelected">{{selectItem}} is selected</h2>
+    <button mat-raised-button (click)="onAddProduct()" >Add To Card</button>
+</footer>
