@@ -24,6 +24,10 @@ import { CardComponent } from './card/card.component';
 import { ContactComponent } from './contact/contact.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { CardoneComponent } from './cardone/cardone.component';
+import { CardtwoComponent } from './cardtwo/cardtwo.component';
+import { DesigndproService } from './appService/designdpro.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -41,7 +45,9 @@ import { ChildComponent } from './child/child.component';
     CardComponent,
     ContactComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    CardoneComponent,
+    CardtwoComponent
   ],
   imports: [
     BrowserModule,
@@ -51,12 +57,14 @@ import { ChildComponent } from './child/child.component';
     MatIconModule,
     MatInputModule,
     MatTableModule,
-    MatCardModule
-
+    MatCardModule,
+HttpClientModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    DesigndproService,
+    
   ],
   bootstrap: [AppComponent]
 })

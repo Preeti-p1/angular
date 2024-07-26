@@ -1,0 +1,16 @@
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-content>
+    <ng-container *ngFor="let product of products">
+      <div>
+        Product Name: <strong>{{product.name}}</strong>
+      </div>
+      <div>
+        Product Id: <strong>{{product.id}}</strong>
+      </div>
+    </ng-container>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="btnClick()">Newsletter Subscription</button>
+  </mat-card-actions>
+</mat-card>
+
